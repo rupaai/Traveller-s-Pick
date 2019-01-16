@@ -1,0 +1,448 @@
+/*#cover {
+    height: 450px;
+    width: 100%;
+    background: url("cover10000.jpg");
+}*/
+body{
+    margin: 0;
+    background-color: ghostwhite;
+    background-image: url("david-marcu-114194.jpg");
+    background-size: 100% 2000px;
+    background-repeat: no-repeat;
+}
+
+.menu-miranda{
+    line-height: 1;
+    margin: 0 30px 0.5em;
+}
+.menu-list {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.bar{
+    padding: 20px 5px 0;
+    display: block;
+    margin: 1em 0;
+    font-family: "Buxton Sketch";
+    font-size: 23px;
+}
+.link{
+    font-size: 1.05em;
+    font-weight: bold;
+    display: block;
+    padding: 1em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    text-decoration: none;
+    color: white;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.link:hover,
+.link:focus {
+    outline: none;
+
+}
+.bar a{
+
+    /*color: rgba(208, 239, 116, 0.8);*/
+}
+.bar a:hover{
+    text-decoration: blink;
+    color: #34598c;
+}
+.menu-miranda .bar{
+    position: relative;
+
+}
+.menu-miranda .link{
+    position: relative;
+    display: block;
+    min-width: 120px;
+    text-align: center;
+    color: #ffffff;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.menu--miranda .link:hover,
+.menu--miranda .link:focus {
+    color: #ffffff;
+}
+.menu--miranda .bar-current .link {
+    color: #34598c;
+}
+.bar-current a{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+.bar-current a:hover{
+    color:#34598c;
+    padding: 5px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    text-decoration: none;
+}
+.menu--miranda .bar::before,
+.menu--miranda .bar::after,
+.menu--miranda .bar::before,
+.menu--miranda .bar::after {
+    content: '';
+    position: absolute;
+    background: #34598c;
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    -webkit-transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
+    transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+#nav_bar{
+    text-align: center;
+    width: 100%;
+}
+#nav_bar ul{
+    width: 100%;
+}
+#nav_bar ul li{
+    width: 15%;
+    background-color: transparent;
+    text-align: center;
+}
+#nav_bar ul li a{
+    text-align: center;
+}
+#nav_bar ul li, div{
+    display: inline-block;
+    float: left;
+}
+
+
+#logowrapper{
+
+    height: 95px;
+    margin-left: 40px;
+
+    margin-top: 20px;
+    opacity: 1;
+    color: white;
+    font-size: 30px;
+    /* background: url("logotransparent.png")*/
+
+}
+
+.fa-dot-circle-o{
+    padding-top: 50px;
+    color: white;
+    size: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+#vwrapper{
+    margin-top: 60px;
+    margin-left: 190px;
+    margin-right: 100px;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    height: inherit;
+
+
+}
+
+/* Dropdown Button */
+
+.wrapper-dropdown-4:focus .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.wrapper-dropdown-4:focus:after {
+    border-width: 0 6px 6px 6px;
+}
+
+/* GLOBALS */
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background: transparent;
+}
+
+::-moz-selection {
+    background: transparent;
+}
+
+.wrapper-demo {
+    margin: 60px 0 0 0;
+    *zoom: 1;
+    font-weight: 400;
+}
+
+.wrapper-demo:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+/* DEMO 4 */
+
+.wrapper-dropdown-4 {
+    /* Size and position */
+    position: relative; /* Enable absolute positionning for children and pseudo elements */
+    width: 210px;
+
+    padding: 10px 15px;
+
+    /* Styles */
+    background: #fff;
+    border-left: 5px solid #0e83cd;
+    cursor: pointer;
+    outline: none;
+}
+
+.wrapper-dropdown-4:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #0e83cd transparent;
+}
+
+.wrapper-dropdown-4 .dropdown {
+    /* Size & position */
+    position: absolute;
+    top: 100%;
+    margin-top: 1px;
+    left: -1px;
+    right: -1px;
+
+    /* Styles */
+    background: white;
+    border: none;
+    list-style: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.wrapper-dropdown-4 .dropdown li {
+    position: relative; /* Enable absolute positioning for checkboxes */
+
+}
+
+
+
+.wrapper-dropdown-4 .dropdown li label {
+    display: block;
+    text-decoration: none;
+
+    border-left: 5px solid;
+    right: 10px;
+
+    padding: 10px 10px 10px 20px;
+    z-index: 2;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+
+    /*  padding: 10px 10px 10px 30px;  Same padding as the button
+    border-bottom: 1px dotted #1ccfcf;*/
+
+}
+
+.wrapper-dropdown-4 .dropdown li:nth-child(1)  label {
+    border-left-color: #89ede7;
+}
+
+.wrapper-dropdown-4 .dropdown li:nth-child(2) label {
+    border-left-color: #5fc491;
+}
+
+.wrapper-dropdown-4 .dropdown li:nth-child(3) label {
+
+    border-left-color: #986595;
+}
+.wrapper-dropdown-4 .dropdown li:nth-child(4)  label {
+    border-left-color: #ed78ca;
+}
+
+.wrapper-dropdown-4 .dropdown li:nth-child(5) label {
+    border-left-color: #41d6d3;
+}
+
+.wrapper-dropdown-4 .dropdown li:nth-child(6) label {
+
+    border-left-color: #d65283;
+}
+
+
+
+.wrapper-dropdown-4 .dropdown li input /* Checkboxes */ {
+    position: absolute;
+    display: block;
+
+    left: 190px;
+    top: 50%;
+    margin-top: -8px;
+
+}
+
+/* Hover state */
+
+.wrapper-dropdown-4 .dropdown li:hover label {
+    background: #f0f0f0;
+}
+
+/* Checked state */
+
+.wrapper-dropdown-4 .dropdown li input:checked ~ label {
+    text-decoration: line-through;
+}
+
+/* Active state */
+
+.wrapper-dropdown-4.active:after {
+    border-width: 0 6px 6px 6px;
+}
+
+.wrapper-dropdown-4.active .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+#vwrapper section{
+    display: inline-block;
+
+
+}
+
+#button {
+
+
+}
+.catagory {
+    margin: 20px 20px 0;
+
+}
+#wrap{
+    width: 800px;
+}
+#btn{
+    width: 244px;
+    margin-top: -40px;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon/icomoon.eot');
+    src:url('fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('fonts/icomoon/icomoon.woff') format('woff'),
+    url('fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('fonts/icomoon/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#button .btn{
+    display: inline-block;
+
+
+}
+.btn {
+
+    font-family: inherit;
+    font-size: inherit;
+
+    background: none;
+    background-color: #0e83cd;
+    cursor: pointer;
+
+    width: 200px;
+    padding: 10px 15px;
+
+   margin-left: 560px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    border: 3px solid #fff;
+    color: #fff;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+
+    z-index: -1;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    transition: all 0.8s;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+
+
+#php{
+    background-color: red;
+    color: whitesmoke;
+    width: 100px;
+    height: 100px;
+}
+.btn:hover,
+.btn:active {
+    color: #0e83cd;
+
+    background-color: white;
+    border: 3px solid #0e83cd;
+}
+

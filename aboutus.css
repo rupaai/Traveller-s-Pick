@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    background-image: linear-gradient( rgba(0,0,0, 0.5), rgba(0,0,0, 0.8) ),url("login.jpg");
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+
+.menu-miranda{
+    line-height: 1;
+    margin: 0 30px 0.5em;
+}
+.menu-list {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.bar{
+    padding: 20px 5px 0;
+    display: block;
+    margin: 1em 0;
+    font-family: "Buxton Sketch";
+    font-size: 23px;
+}
+.link{
+    font-size: 1.05em;
+    font-weight: bold;
+    display: block;
+    padding: 1em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    text-decoration: none;
+    color: white;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.link:hover,
+.link:focus {
+    outline: none;
+
+}
+.bar a{
+
+    /*color: rgba(208, 239, 116, 0.8);*/
+}
+.bar a:hover{
+    text-decoration: blink;
+    color: #34598c;
+}
+.menu-miranda .bar{
+    position: relative;
+
+}
+.menu-miranda .link{
+    position: relative;
+    display: block;
+    min-width: 120px;
+    text-align: center;
+    color: #ffffff;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.menu--miranda .link:hover,
+.menu--miranda .link:focus {
+    color: #ffffff;
+}
+.menu--miranda .bar-current .link {
+    color: #34598c;
+}
+.bar-current a{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+.bar-current a:hover{
+    color:#34598c;
+    padding: 5px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    text-decoration: none;
+}
+.menu--miranda .bar::before,
+.menu--miranda .bar::after,
+.menu--miranda .bar::before,
+.menu--miranda .bar::after {
+    content: '';
+    position: absolute;
+    background: #34598c;
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    -webkit-transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
+    transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+#nav_bar{
+    text-align: center;
+    width: 100%;
+}
+#nav_bar ul{
+    width: 100%;
+}
+#nav_bar ul li{
+    width: 15%;
+    background-color: transparent;
+    text-align: center;
+}
+#nav_bar ul li a{
+    text-align: center;
+}
+#nav_bar ul li, div{
+    display: inline-block;
+    float: left;
+}
+
+
+#logowrapper{
+
+    height: 95px;
+    margin-left: 40px;
+
+    margin-top: 20px;
+    opacity: 1;
+    color: white;
+    font-size: 30px;
+    /* background: url("logotransparent.png")*/
+
+}
+
+.fa-dot-circle-o{
+    padding-top: 50px;
+    color: white;
+    size: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.art {
+    background-color: ghostwhite;
+}
+
+article {
+    margin-top: 50px;
+    margin-left: 170px;
+    margin-right: 199px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}

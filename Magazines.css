@@ -1,0 +1,296 @@
+body{
+    margin: 0;
+    background-color: #e4e4e4;
+    background-image: linear-gradient( rgba(0,0,0, 0.2), rgba(0,0,0, 0.2) ),url("login.jpg");
+    background-size: 100% 720px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+
+.menu-miranda{
+    line-height: 1;
+    margin: 0 30px 0.5em;
+}
+.menu-list {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.bar{
+    padding: 20px 5px 0;
+    display: block;
+    margin: 1em 0;
+    font-family: "Buxton Sketch";
+    font-size: 23px;
+}
+.link{
+    font-size: 1.05em;
+    font-weight: bold;
+    display: block;
+    padding: 1em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    text-decoration: none;
+    color: white;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.link:hover,
+.link:focus {
+    outline: none;
+
+}
+.bar a{
+
+    /*color: rgba(208, 239, 116, 0.8);*/
+}
+.bar a:hover{
+    text-decoration: blink;
+    color: #34598c;
+}
+.menu-miranda .bar{
+    position: relative;
+
+}
+.menu-miranda .link{
+    position: relative;
+    display: block;
+    min-width: 120px;
+    text-align: center;
+    color: #ffffff;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.menu--miranda .link:hover,
+.menu--miranda .link:focus {
+    color: #ffffff;
+}
+.menu--miranda .bar-current .link {
+    color: #34598c;
+}
+.bar-current a{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+.bar-current a:hover{
+    color:#34598c;
+    padding: 5px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    text-decoration: none;
+}
+.menu--miranda .bar::before,
+.menu--miranda .bar::after,
+.menu--miranda .bar::before,
+.menu--miranda .bar::after {
+    content: '';
+    position: absolute;
+    background: #34598c;
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    -webkit-transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
+    transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+#nav_bar{
+    text-align: center;
+    width: 100%;
+}
+#nav_bar ul{
+    width: 100%;
+}
+#nav_bar ul li{
+    width: 15%;
+    background-color: transparent;
+    text-align: center;
+}
+#nav_bar ul li a{
+    text-align: center;
+}
+#nav_bar ul li, div{
+    display: inline-block;
+    float: left;
+}
+
+
+#logowrapper{
+
+    height: 95px;
+    margin-left: 40px;
+
+    margin-top: 20px;
+    opacity: 1;
+    color: white;
+    font-size: 30px;
+    /* background: url("logotransparent.png")*/
+
+}
+
+.fa-dot-circle-o{
+    padding-top: 50px;
+    color: white;
+    size: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#border{
+    width: 600px;
+    height: 370px;
+    margin-top: 35px;
+    background-color: transparent;
+    border: 20px ;
+    border-style: double;
+    border-color: rgba(255,255,255,.4);
+    margin-left: 350px;
+}
+#border h2{
+    color: ghostwhite;
+    font-size: 36px;
+    margin-top: 100px;
+    font-family: "Arial";
+    font-weight: bold;
+    text-align: center;
+}
+#border h3{
+    color: ghostwhite;
+    font-size: 20px;
+    margin-top: 10px;
+    float: right;
+    margin-right: 30px;
+    font-family: "Arial";
+    font-weight: bold;
+    text-align: center;
+}
+#takeatour{
+    width: auto;
+    height: 110px;
+    margin-top: 30px;
+    margin-left: 1200px;
+}
+#text{
+    display: block;
+    height: 30px;
+}
+#text p{
+    margin-top: 0;
+    color: ghostwhite;
+    float: left;
+    text-align: right;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+#shield{
+    margin-top: -15px;
+    margin-right: 52px;
+    margin-left: 0;
+    float: right;
+    bottom: 20px;
+    height: 80px;
+    display: block;
+}
+
+#diamondshape {
+    margin-top: 0;
+    content: '';
+    position: relative;
+    /*left: -50px*/;
+    top: 2px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px double;
+    border-top-color: rgba(255,255,255,.4);
+}
+#magazinebodywrpper{
+    width: 100%;
+    height: 1000px;
+}
+#topic1{
+    width: 100%;
+    height: 490px;
+    background-color: #e9e9e9;
+    margin-top: 99px;
+}
+#festpic{
+    width: 600px;
+    height: 412px;
+    float: right;
+    margin-right: 90px;
+    padding-top: 40px;
+    background: url("images.jpg");
+    background-size: cover;
+}
+#festtext{
+    width: 500px;
+    height: 450px;
+    float: left;
+
+}
+#festdes{
+    margin-left: 50px;
+    width: 500px;
+    height: 250px;
+    margin-top: 100px;
+    color: #4e2c53;
+    /*border: 2px solid;
+    border-color: brown;
+    background-color: rgba(255,255,255,.5);*/
+    display: block;
+    margin-bottom: 50px;
+}
+#festdes header{
+    font-family: Arial;
+    padding-top: 0;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 80px;
+}
+#festdes p{
+    font-family: Arial;
+    margin-left: 110px;
+    margin-top: 70px;
+    font-size: 15px;
+    border-left: 8px;
+    border-left-style: dashed;
+    padding-left: 10px;
+
+}
+
+#borderwrapper{
+    width: 600px;
+    margin-top: -450px;
+    height: 490px;
+
+    float: left;
+
+}
+/*
+#desborder1{
+    height: 40px;
+    width: 300px;
+    border: 2px dotted;
+    border-color: brown;
+    border-top: none;
+    margin-left: 480px;
+    margin-top: 450px;
+}*/
