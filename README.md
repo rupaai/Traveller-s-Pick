@@ -1,13 +1,11 @@
-Project Name: Traveller's Pick(Project based on travelling popular destinations)
-Programming Language: HTML, CSS, PHP, JavaScript, Ajax
-IDE : JetBrains PhpStorm 
-
-Requirements:   
+### Traveller's Pick(Project based on travelling popular destinations)
+### Programming Language: HTML, CSS, PHP, JavaScript, Ajax
+### Requirements
 	1) Wampserver
         2) Database file is in country_review\Database.
 	3) Internet access is a must for some parts.
 
-Instructions:
+### Instructions
 1) Home: 
 
      #1: One can select their desired countries from the spotlight destinations. If a country is clicked, all the information of a country will be displayed on explore page. The destinations of spotlight destination are randomized with each refresh.
